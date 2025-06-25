@@ -1,1 +1,16 @@
-/home/kai/.gitconfig
+[user]
+	name = blahnikkai
+	email = 83978042+blahnikkai@users.noreply.github.com
+[alias]
+	st = status
+	ci = commit
+	di = diff
+	ll = log --oneline
+	llg = log --oneline --graph
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe
+[core]
+	autocrlf = true
+	editor = code --wait
+[init]
+	defaultBranch = main
