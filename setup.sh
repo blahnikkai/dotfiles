@@ -1,11 +1,11 @@
 #!/bin/zsh
 echo "Setting up symlinks..."
 
-ln -sf ~/dotfiles/.editorconfig ~/.editorconfig
-ln -sf ~/dotfiles/.flake8 ~/.flake8
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -sf ~/dotfiles/.profile ~/.profile
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.editorconfig ~/.editorconfig
+ln -s ~/dotfiles/.flake8 ~/.flake8
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/dotfiles/.profile ~/.profile
+ln -s ~/dotfiles/.zshrc ~/.zshrc
 
 echo "Done!"
