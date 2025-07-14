@@ -5,12 +5,14 @@
 	st = status
 	ci = commit
 	di = diff
+	dis = diff --staged
+  	dicw = diff --color-words
+  	discw = diff --staged --color-words
 	ll = log --oneline
 	llg = log --oneline --graph
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe
 [core]
 	autocrlf = true
-	editor = code --wait
+	editor = vim
 [init]
 	defaultBranch = main
+
