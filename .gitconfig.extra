@@ -1,8 +1,6 @@
-[user]
-	name = blahnikkai
-	email = 83978042+blahnikkai@users.noreply.github.com
 [alias]
-	st = status
+	br = branch
+	brc = branch --show-current
 	ci = commit
 	di = diff
 	dis = diff --staged
@@ -10,8 +8,8 @@
   	discw = diff --staged --color-words
 	ll = log --oneline
 	llg = log --oneline --graph
+	st = status
 [core]
-	autocrlf = true
 	editor = vim
 [init]
 	defaultBranch = main
