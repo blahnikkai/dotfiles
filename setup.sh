@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Path to your dotfiles repo's gitconfig (edit this if needed)
 DOTFILES_GITCONFIG="$HOME/dotfiles/.gitconfig.extra"
