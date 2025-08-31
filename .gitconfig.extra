@@ -8,7 +8,7 @@
   	discw = diff --staged --color-words
 	ll = log --oneline
 	llg = log --oneline --graph
-	st = status
+	st = status -s
 [core]
 	editor = vim
 [init]
