@@ -1,6 +1,6 @@
 [alias]
 	br = branch
-	brc = branch --show-current
+    brv = branch --verbose --verbose
 	ci = commit
 	di = diff
 	dis = diff --staged
