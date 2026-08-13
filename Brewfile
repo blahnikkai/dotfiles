@@ -1,0 +1,60 @@
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU compiler collection
+brew "gcc"
+# OpenGL Extension Wrangler Library
+brew "glew"
+# Multi-platform library for OpenGL applications
+brew "glfw"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# Command-line tools for converting between MessagePack and JSON
+brew "msgpack-tools"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Tool Command Language
+brew "tcl-tk"
+# Python interface to Tcl/Tk
+brew "python-tk@3.12"
+# Python interface to Tcl/Tk
+brew "python-tk@3.14"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Safe, concurrent, practical language
+brew "rust"
+# Distribution of the Python and R programming languages for scientific computing
+cask "anaconda"
+# Clipboard manager
+cask "maccy"
+# Tool to invert scroll direction for physical scroll wheels
+cask "unnaturalscrollwheels"
+vscode "1yib.rust-bundle"
+vscode "dustypomerleau.rust-syntax"
+vscode "fill-labs.dependi"
+vscode "golang.go"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "mskelton.one-dark-theme"
+vscode "mustidev.react-snippets"
+vscode "ritwickdey.liveserver"
+vscode "rodrigovallades.es7-react-js-snippets"
+vscode "rust-lang.rust-analyzer"
+vscode "ryu1kn.partial-diff"
+vscode "swellaby.rust-pack"
+vscode "tamasfe.even-better-toml"
+vscode "vs-publisher-1448185.keyoti-changeallendoflinesequence"
+go "github.com/go-delve/delve/cmd/dlv"
+go "golang.org/x/tools/gopls"
