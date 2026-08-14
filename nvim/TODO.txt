@@ -1,0 +1,6 @@
+## Other plugins
+
+Learn about Fuzzy Finding (e.g., telescope.nvim): This is often considered the most essential Neovim plugin. It lets you instantly search through thousands of files, grep through your entire codebase, or search your git history with a visual preview window.
+
+Git Integration (e.g., gitsigns.nvim): Adds subtle indicators next to your line numbers showing added, modified, or deleted lines, and lets you preview git hunks inline.
+
