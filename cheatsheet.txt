@@ -1,0 +1,127 @@
+====================================================================
+NEOVIM CHEATSHEET  (config: ~/.config/nvim/init.lua, via lazy.nvim)
+====================================================================
+Leader key = <Space>   (press Space, then the next key)
+
+--------------------------------------------------------------------
+WHICH-KEY  (folke/which-key.nvim)
+--------------------------------------------------------------------
+Press <Space> (or any prefix key like "g") and just WAIT ~300ms.
+A popup appears showing every keymap that starts with what you typed.
+This is the fastest way to (re)discover shortcuts below - when in
+doubt, tap leader and look at the menu instead of memorizing.
+
+--------------------------------------------------------------------
+FILE EXPLORER  (nvim-tree/nvim-tree.lua)
+--------------------------------------------------------------------
+<leader>e        Toggle the file tree sidebar open/closed
+
+Inside the tree window:
+  <CR> / o       Open file (or expand/collapse folder)
+  <C-v>          Open in vertical split
+  <C-x>          Open in horizontal split
+  <C-t>          Open in new tab
+  a              Create new file/folder (end path with "/" for a folder)
+  d              Delete file/folder
+  r              Rename
+  x              Cut (mark for move)
+  c              Copy (mark for copy)
+  p              Paste previously cut/copied item
+  y / Y / gy     Copy name / relative path / absolute path to clipboard
+  R              Refresh tree
+  H              Toggle showing hidden (dotfile) entries
+  q              Close the tree
+
+--------------------------------------------------------------------
+FUZZY FINDER  (nvim-telescope/telescope.nvim)
+--------------------------------------------------------------------
+<leader>ff       Find files (fuzzy search filenames in project)
+<leader>fg       Live grep (fuzzy search text inside all files)
+<leader>fc       Find commands (fuzzy search Ex commands)
+<leader>fk       Find keymaps ("I forgot the shortcut" search)
+
+Inside any Telescope picker:
+  type           Fuzzy-filters the list as you type
+  <C-n> / <Down> Next result
+  <C-p> / <Up>   Previous result
+  <CR>           Open selection in current window
+  <C-x>          Open selection in horizontal split
+  <C-v>          Open selection in vertical split
+  <C-t>          Open selection in new tab
+  <C-u> / <C-d>  Scroll the preview pane up/down
+  <Esc> / <C-c>  Close the picker
+
+--------------------------------------------------------------------
+BUFFER TABS  (akinsho/bufferline.nvim)
+--------------------------------------------------------------------
+<Tab>            Go to next open file tab
+<S-Tab>           Go to previous open file tab
+(LSP errors/warnings show up as icons directly on the tabs)
+
+--------------------------------------------------------------------
+AUTOCOMPLETION  (hrsh7th/nvim-cmp)
+--------------------------------------------------------------------
+Triggers automatically while typing in insert mode when an LSP is
+attached. Also:
+  <C-Space>      Manually open the completion menu
+  <Tab>          Select next suggestion
+  <S-Tab>        Select previous suggestion
+  <CR>           Confirm/accept the highlighted suggestion
+
+--------------------------------------------------------------------
+FORMATTING  (stevearc/conform.nvim)
+--------------------------------------------------------------------
+Runs automatically on save (falls back to the LSP formatter if no
+dedicated formatter is configured for the filetype).
+  <leader>f      Manually format the current file (normal mode) or
+                 the selected range (visual mode)
+
+Configured formatters:
+  python -> isort, then black
+  rust   -> rustfmt
+
+--------------------------------------------------------------------
+LINTING  (mfussenegger/nvim-lint)
+--------------------------------------------------------------------
+Runs automatically (no keybinding needed) when you enter a buffer,
+save a file, or leave insert mode. Diagnostics show as squiggles in
+the buffer and in the sign column.
+
+Configured linters:
+  python -> flake8
+  cpp    -> cpplint
+  rust   -> handled by rust-analyzer (LSP) instead, no separate linter
+
+--------------------------------------------------------------------
+LSP  (native vim.lsp, servers installed/managed by mason.nvim)
+--------------------------------------------------------------------
+Active servers: pyright (Python), clangd (C/C++), rust_analyzer (Rust)
+Mason (:Mason to open UI) installs/updates these language servers.
+
+Built-in Neovim LSP keymaps (available whenever a server is attached):
+  K              Hover docs for symbol under cursor
+  grn            Rename symbol
+  gra            Code action (quick fixes, refactors) - also visual mode
+  grr            List references
+  gri            Go to implementation
+  grt            Go to type definition
+  gO             Document symbols (outline of current file)
+  gq / grx       Run code lens (grx)
+  <C-]>          Go to definition
+  <C-s>          (insert mode) Show signature help while typing args
+  ]d / [d        Jump to next/previous diagnostic (if mapped; otherwise
+                 use `:lua vim.diagnostic.jump({count=1})`)
+
+Note: clangd formatting is disabled on purpose - conform.nvim
+(<leader>f) handles formatting instead so results stay consistent.
+
+--------------------------------------------------------------------
+SYNTAX HIGHLIGHTING  (nvim-treesitter)
+--------------------------------------------------------------------
+No keybindings - just gives much better, structure-aware highlighting
+for c, cpp, rust, python, lua, vim. Runs automatically.
+
+--------------------------------------------------------------------
+THEME
+--------------------------------------------------------------------
+Colorscheme: onedark (navarasu/onedark.nvim), style = "dark"
