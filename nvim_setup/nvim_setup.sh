@@ -14,8 +14,8 @@ if [ -d "$HOME/.config/nvim" ] || [ -L "$HOME/.config/nvim" ]; then
 fi
 
 # 3. Create the symlink (points ~/.config/nvim to your setup/nvim folder)
-# $PWD ensures it uses the absolute path of your setup directory
-ln -sf "$PWD/nvim" "$HOME/.config/nvim"
+# $HOME ensures it uses the absolute path of your setup directory
+ln -sf "$HOME/dotfiles/nvim_setup/nvim" "$HOME/.config/nvim"
 
 # 4. Headlessly install plugins
 # This command assumes you use lazy.nvim.
@@ -28,5 +28,5 @@ echo ""
 echo "========================================================"
 echo "             NEOVIM ENVIRONMENT READY                   "
 echo "========================================================"
-cat "$PWD/cheatsheet.txt"
+cat "$HOME/dotfiles/nvim_setup/cheatsheet.txt"
 echo "========================================================"
