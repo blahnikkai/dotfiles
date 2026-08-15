@@ -1,5 +1,7 @@
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Play, record, convert, and stream select audio and video codecs
@@ -20,6 +22,8 @@ brew "msgpack-tools"
 brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Theme for zsh
+brew "powerlevel10k"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # Tool Command Language
