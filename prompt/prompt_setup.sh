@@ -37,7 +37,7 @@ if [ -f "$HOME/.p10k.zsh" ] && [ ! -L "$HOME/.p10k.zsh" ]; then
     echo "Existing .p10k.zsh found. Backing it up to .p10k.zsh.bak..."
     mv "$HOME/.p10k.zsh" "$HOME/.p10k.zsh.bak"
 fi
-ln -sf "$PWD/.p10k.zsh" "$HOME/.p10k.zsh"
+ln -sf "$HOME/dotfiles/prompt/.p10k.zsh" "$HOME/.p10k.zsh"
 
 # 4. Print Font Installation Instructions
 echo ""
