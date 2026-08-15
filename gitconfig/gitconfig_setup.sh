@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to your dotfiles repo's gitconfig (edit this if needed)
-DOTFILES_GITCONFIG="$HOME/dotfiles/.gitconfig.extra"
+DOTFILES_GITCONFIG="$HOME/dotfiles/gitconfig/.gitconfig.extra"
 
 # Main gitconfig file
 USER_GITCONFIG="$HOME/.gitconfig"
