@@ -14,4 +14,4 @@ fi
 
 # Run brew bundle, explicitly pointing to your Brewfile
 # (Assuming the script is run from the root of your setup directory)
-brew bundle --file=./Brewfile
+brew bundle --file=./brew/Brewfile
